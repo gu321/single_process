@@ -1,18 +1,20 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
+PKG_NAME = 'single_process'
+PACKAGES = [PKG_NAME] + ["%s.%s" % (PKG_NAME, i)
+                         for i in find_packages(PKG_NAME)]
 import sys
 
 txt = open('README.rst', 'r').read()
 title = txt.split("\n")[0]
 
 kw = dict(
-    name='single_process',
-    version="2.1",
+    name=PKG_NAME,
+    version="2.3",
     description=title,
     long_description=txt,
-    author='zsp',
+    author='zuroc',
     author_email='xpure@foxmail.com',
-    py_modules=['single_process'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
@@ -23,7 +25,9 @@ kw = dict(
         'Topic :: Internet',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
-    url="https://github.com/gu321/single_process"
+    url="https://github.com/gu321/single_process",
+    packages=PACKAGES,
+
 )
 
 if sys.version_info[1] == 5:
