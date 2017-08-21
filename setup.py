@@ -2,12 +2,13 @@ from setuptools import setup
 
 import sys
 
+txt = open('README.rst', 'r').read()
 
 kw = dict(
     name='single_process',
     version="2.0",
-    description='limit python script just run a single process',
-    long_description=open('README.rst', 'r').read(),
+    description=txt.split("\n")[0],
+    long_description=txt,
     author='zsp',
     author_email='xpure@foxmail.com',
     py_modules=['single_process'],
