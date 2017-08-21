@@ -3,11 +3,12 @@ from setuptools import setup
 import sys
 
 txt = open('README.rst', 'r').read()
+title = txt.split("\n")[0]
 
 kw = dict(
     name='single_process',
-    version="2.0",
-    description=txt.split("\n")[0],
+    version="2.1",
+    description=title,
     long_description=txt,
     author='zsp',
     author_email='xpure@foxmail.com',
@@ -22,7 +23,7 @@ kw = dict(
         'Topic :: Internet',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
-    url="https://github.com/xpurer/single_process"
+    url="https://github.com/gu321/single_process"
 )
 
 if sys.version_info[1] == 5:
