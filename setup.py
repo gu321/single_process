@@ -10,7 +10,7 @@ title = txt.split("\n")[0]
 
 kw = dict(
     name=PKG_NAME,
-    version="2.3",
+    version="2.3.1",
     description=title,
     long_description=txt,
     author='zuroc',
