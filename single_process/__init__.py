@@ -1,6 +1,7 @@
 import os
 import sys
 import tempfile
+import logging
 import fcntl
 import errno
 import signal
@@ -25,8 +26,8 @@ def single_process():
         fcntl.lockf(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
     except IOError as e:
         if e.errno in (errno.EACCES, errno.EAGAIN):
-            print(
-                filename, 'running. Quit'
+            logging.error(
+                '%s RUNNING . QUIT' % filename
             )
             sys.exit(0)
         else:
