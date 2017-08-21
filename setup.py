@@ -1,12 +1,13 @@
-from distutils.core import setup
+from setuptools import setup
+
 import sys
 
 
 kw = dict(
     name='single_process',
-    version="1.0",
+    version="2.0",
     description='limit python script just run a single process',
-    long_description=open('README.txt', 'r').read(),
+    long_description=open('README', 'r').read(),
     author='zsp',
     author_email='xpure@foxmail.com',
     py_modules=['single_process'],
