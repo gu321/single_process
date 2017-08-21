@@ -6,6 +6,7 @@ Limit python script just run a single process, support python3
 You only need to import the single_process.init module directly
 
 ::
+
     import single_process.init
 
 
@@ -31,6 +32,7 @@ Of course, you can also manually call the single_process function
 只需要直接 import single_process.init 模块
 
 ::
+    
     import single_process.init
 
 当然，你也可以手工调用 single_process 函数
