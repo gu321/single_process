@@ -14,7 +14,7 @@ USE
 
 Limit python script just run a single process, support python3
 
-You only need to import the single_process.init module directly
+Use only need to directly import single_process.init module (no need for any function call)
 
 ::
 
@@ -51,7 +51,7 @@ Of course, you can also manually call the single_process function
 -------------
 
 限制一个python脚本只运行一个进程，支持python3
-只需要直接 import single_process.init 模块
+使用只需要直接 import single_process.init 模块(不需要任何函数调用)
 
 ::
     
