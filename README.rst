@@ -1,4 +1,15 @@
 README
+=============
+
+SETUP
+-------------
+
+:: 
+
+    pip install -U single_process
+
+
+USE
 -------------
 
 Limit python script just run a single process, support python3
@@ -26,6 +37,17 @@ Of course, you can also manually call the single_process function
         main()
 
 中文说明
+=============
+
+安装
+-------------
+
+:: 
+
+    pip install -U single_process
+
+
+使用
 -------------
 
 限制一个python脚本只运行一个进程，支持python3
