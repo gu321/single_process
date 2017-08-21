@@ -6,7 +6,7 @@ PACKAGES = [PKG_NAME] + ["%s.%s" % (PKG_NAME, i)
 import sys
 
 txt = open('README.rst', 'r').read()
-title = txt.split("\n")[0]
+title = "limit python script just run a single process"
 
 kw = dict(
     name=PKG_NAME,
