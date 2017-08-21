@@ -10,7 +10,7 @@ title = "limit python script just run a single process"
 
 kw = dict(
     name=PKG_NAME,
-    version="2.3.1",
+    version="2.4.1",
     description=title,
     long_description=txt,
     author='zuroc',
